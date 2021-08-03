@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="_css/style.css" rel="stylesheet" />
+    <title>Matemática Financeira</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Matemática Financeira</h1>
+      </header>
+
+      <section>
+        <div>
+          <p>
+            <label for="capital">Capital inicial:</label>
+            <input type="number" name="capital" id="capital" placeholder="R$"/>
+          </p>
+
+          <p>
+            <label for="juros">Taxa de juros:</label>
+            <input type="number" name="juros" id="juros" placeholder="% ao Mês" />
+          </p>
+
+          <p>
+            <label for="tempo">Tempo:</label>
+            <input type="number" name="tempo" id="tempo" placeholder="Meses"/>
+          </p>
+
+          <p>
+            Tipo de juros:
+            <span>
+              <input type="radio" name="opcoes" id="simples" checked />
+              <label for="simples">Simples</label>
+            </span>
+
+            <span>
+              <input type="radio" name="opcoes" id="composta" />
+              <label for="composta">Compostos</label>
+            </span>
+          </p>
+
+          <p>
+            <input type="button" value="Montante" onclick="calcular()" />
+          </p>
+        </div>
+        <div class="res" id="res">Preencha os dados acima para ver o resultado!</div>
+      </section>
+    </div><!--container-->
+    <footer>
+      <p>&copy; Desenvolvido por Leandro Araújo</p>
+  </footer>
+
+    <script src="_js/script.js"></script>
+  </body>
+</html>
